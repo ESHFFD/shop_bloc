@@ -1,7 +1,7 @@
 import 'package:shop_bloc/models/model.dart';
 
 class ApiRepository {
-  static Future<List<Product>> loadedData() {
+  static Future<List<Product>> loadedData() async {
     return Future.delayed(const Duration(seconds: 3), () {
       return [
         Product(

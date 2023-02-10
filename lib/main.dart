@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_bloc/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,6 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(),
+      home: const HomePage(),
+    );
   }
 }
